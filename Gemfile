@@ -24,6 +24,9 @@ gem "turbo-rails"
 # Simple Form Gem
 gem "simple_form", github: "heartcombo/simple_form"
 
+# faker
+gem 'faker'
+
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
