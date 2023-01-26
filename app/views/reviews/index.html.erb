@@ -1,2 +1,16 @@
-<h1>Reviews#index</h1>
-<p>Find me in app/views/reviews/index.html.erb</p>
+<div class="container">
+  <p style="color: green"><%= notice %></p>
+
+  <h1>Reviews#index</h1>
+  <p>Find me in app/views/reviews/index.html.erb</p>
+
+  <hr>
+  <div id="reviews">
+ <ul>
+  <% @reviews.each do |review| %>
+    <li>Restaurant: <%= review.restaurant.name %>, Content: <%= review.content %>, Rating: <%= review.rating%></li>
+  <% end %>
+</ul>
+  </div>
+  <%= link_to "Back to all restaurants page", restaurants_path %>
+</div>

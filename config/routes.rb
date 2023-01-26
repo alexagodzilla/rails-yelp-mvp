@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   resources :restaurants do
-    resources :reviews, only: [:index, :new, :create]
+    resources :reviews, only: [:index, :create]
   end
   resources :reviews, only: [:destroy]
 end
